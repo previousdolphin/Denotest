@@ -6,5 +6,5 @@ const server = serve({ hostname: "0.0.0.0", port });
 console.log(`Server is running on http://0.0.0.0:${port}`);
 
 for await (const req of server) {
-  req.respond({ body: "Hello, world!\n" });
+  req.respond({ body: "Hello, Deno Deploy!\n" });
 }
